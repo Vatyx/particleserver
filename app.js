@@ -9,7 +9,7 @@ var eventEmitter = new EventEmitter.EventEmitter();
 
 app.set("port", process.env.PORT || 3000);
 
-app.get("/", function(req, res) {
+app.post("/", function(req, res) {
     console.log(req.body);
     res.json({foo: "bar"});
     // eventEmitter.emit("data");
